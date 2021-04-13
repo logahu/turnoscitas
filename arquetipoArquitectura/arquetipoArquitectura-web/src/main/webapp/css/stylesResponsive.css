@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: black;
+}
+
+.full-heigth-grow {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav ul {
+	display: flex;
+}
+
+.nav-links {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+}
+
+.nav-links a {
+	color: inherit;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.nav-links a:hover {
+	color: darkred;
+}
+
+.noVisible{
+	display: none;
+}
+
+.brand-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+.brand-wrapper .logo {
+	width: 100px;
+	height: 80px;
+}
+
+.logo{
+	width: 200px;
+	height: 160px;
+}
+
+.container {
+	min-height: 75vh;
+	flex-grow: 1;
+}
+
+.main-header {
+	text-align: center;
+	height: 15vh;
+}
+
+.card {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardIndex{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.cardIndex h1,h3{
+	width: 90%;
+	margin: 10px;
+}
+.inputText.ui-password,.inputText.ui-inputtext, .inputText.ui-selectonemenu{
+	margin: 10px;
+}
+
+.selector:hover {
+	cursor: pointer;
+	color: darkred;
+}
+
+.footer {
+	height: 10vh;
+	background-color: #333;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer p {
+	color: white;
+	margin: 10px 0 0 0;
+}
+
+.btnPrime.ui-button-text-only {
+	background: #d32d38;
+	border-color: #C0C0C0;
+	color: #fff;
+	font-size: 11px;
+}
+
+.btnPrime.ui-button-text-only:hover {
+	background:rgb(192, 3, 3);
+	border-color: #C0C0C0;
+}
+
+
+@media screen and (max-width: 768px) {
+	.line {
+		width: 30px;
+		height: 3px;
+		margin: 5px;
+		background: darkred;
+	}
+	.burger {
+		cursor: pointer;
+	}
+	.burger.open {
+		order: 1;
+	}
+	.main-header {
+		transition: .50s ease-in-out;
+	}
+	.main-header.open {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .75s ease-out;
+	}
+	body.open {
+		overflow: hidden;
+	}
+	.nav .nav-links {
+		display: none;
+	}
+	.nav-links.open {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.nav-links.open li {
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+}

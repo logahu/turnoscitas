@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" version="6">
+  <display-name>arquetipoArquitectura-ear</display-name>
+  <module id="Module_1545325545296">
+    <ejb>arquetipoArquitectura-ejb-1.0.0-SNAPSHOT.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>arquetipoArquitectura-web-1.0.0-SNAPSHOT.war</web-uri>
+      <context-root>arquetipoArquitectura-web</context-root>
+    </web>
+  </module>
+  <library-directory>lib</library-directory>
+</application>

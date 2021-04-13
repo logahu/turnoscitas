@@ -1,0 +1,36 @@
+
+<html lang="es" xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://java.sun.com/jsf/passthrough">
+
+<h:head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/stylesResponsive.css" />
+</h:head>
+<h:body>
+
+	<h:form id="formLogin">
+		<p:growl id="growl" showDetail="true" />
+
+		<div class="container cardIndex">
+			<img src="./img/logo.png" class="logo" />
+			<h3>Ingrese usuario y contraseña</h3>
+
+			<p:inputText styleClass="inputText" id="Usuario" required="true"
+				value="" placeholder="Usuario" requiredMessage="Escriba el usuario" />
+			
+			<p:password styleClass="inputText" id="Password" required="true"
+				value="" placeholder="Contraseña" requiredMessage="Escriba la contraseña" />
+
+			<p:commandButton styleClass="btnPrime" value="Ingresar"
+				update="growl" action="#{loginBean.login()}" />
+		</div>
+
+	</h:form>
+
+</h:body>
+</html>
